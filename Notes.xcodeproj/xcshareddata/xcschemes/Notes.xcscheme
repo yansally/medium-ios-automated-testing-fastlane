@@ -44,6 +44,9 @@
          <TestPlanReference
             reference = "container:TestShard_1.xctestplan">
          </TestPlanReference>
+         <TestPlanReference
+            reference = "container:Notes.xctestplan">
+         </TestPlanReference>
       </TestPlans>
       <Testables>
          <TestableReference

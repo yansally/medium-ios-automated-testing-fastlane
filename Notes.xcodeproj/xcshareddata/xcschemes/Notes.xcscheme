@@ -38,11 +38,8 @@
       </MacroExpansion>
       <TestPlans>
          <TestPlanReference
-            reference = "container:Notes.xctestplan"
+            reference = "container:TestShard_0.xctestplan"
             default = "YES">
-         </TestPlanReference>
-         <TestPlanReference
-            reference = "container:TestShard_0.xctestplan">
          </TestPlanReference>
          <TestPlanReference
             reference = "container:TestShard_1.xctestplan">

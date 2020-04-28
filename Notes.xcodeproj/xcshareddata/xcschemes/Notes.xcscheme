@@ -41,6 +41,14 @@
             reference = "container:Notes.xctestplan"
             default = "YES">
          </TestPlanReference>
+         <TestPlanReference
+            reference = "container:TestShard_0.xctestplan"
+            default = "NO">
+         </TestPlanReference>
+         <TestPlanReference
+            reference = "container:TestShard_1.xctestplan"
+            default = "NO">
+         </TestPlanReference>
       </TestPlans>
       <Testables>
          <TestableReference

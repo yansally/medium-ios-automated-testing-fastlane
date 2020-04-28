@@ -42,12 +42,10 @@
             default = "YES">
          </TestPlanReference>
          <TestPlanReference
-            reference = "container:TestShard_0.xctestplan"
-            default = "NO">
+            reference = "container:TestShard_0.xctestplan">
          </TestPlanReference>
          <TestPlanReference
-            reference = "container:TestShard_1.xctestplan"
-            default = "NO">
+            reference = "container:TestShard_1.xctestplan">
          </TestPlanReference>
       </TestPlans>
       <Testables>

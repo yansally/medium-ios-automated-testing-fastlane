@@ -75,7 +75,6 @@ workflows:
             $BITRISE_SOURCE_DIR/Notes.xcodeproj
             $BITRISE_SOURCE_DIR/TestShard_0.xctestplan
             $BITRISE_SOURCE_DIR/TestShard_1.xctestplan
-            $BITRISE_SOURCE_DIR/Notes.xctestplan
         - is_debug_mode: 'true'
     - build-router-start@0.11:
         inputs:
@@ -132,24 +131,13 @@ workflows:
     - script@1.1:
         title: Test without Building
         inputs:
-        - content: |
-            #!/usr/bin/env bash
-            # fail if any commands fails
-            set -e
-            # debug log
-            set -x
-
-            # write your script here
-            echo "-- test-without-building --"
-
-            xcodebuild \
-            -workspace "Notes.xcworkspace" \
-            -scheme "Notes" \
-            -sdk iphonesimulator \
-            -destination "platform=iOS Simulator,name=iPhone 8,OS=latest" \
-            -resultBundlePath "xcodebuild.xcresult" \
-            -testPlan "TestShard_0" \
-            test-without-building
+        - content: "#!/usr/bin/env bash\n# fail if any commands fails\nset -e\n# debug
+            log\nset -x\n\n# write your script here\necho \"-- test-without-building
+            --\"\n\nxcodebuild \\\n-workspace \"Notes.xcworkspace\" \\\n-scheme \"Notes\"
+            \\\n-sdk iphonesimulator \\\n-destination \"platform=iOS Simulator,name=iPhone
+            8,OS=latest\" \\\n-resultBundlePath \"xcodebuild.xcresult\" \\\n-derivedDataPath
+            \"/Users/vagrant/git/DerivedData\" \\\n-testPlan \"TestShard_0\" \\\ntest-without-building
+            \n"
     - script@1.1:
         title: Compress Result Bundle
         is_always_run: true

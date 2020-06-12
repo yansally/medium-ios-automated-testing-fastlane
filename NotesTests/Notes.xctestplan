@@ -1,0 +1,60 @@
+{
+  "configurations" : [
+    {
+      "id" : "C96E4C1B-5147-4888-B8F0-EC80E6D69C13",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Notes.xcodeproj",
+      "identifier" : "0ECB5BA62036EE9400655E0F",
+      "name" : "Notes"
+    }
+  },
+  "testTargets" : [
+    {
+      "skippedTests" : [
+        "NotesTests1",
+        "NotesTests10",
+        "NotesTests2",
+        "NotesTests3",
+        "NotesTests4",
+        "NotesTests5",
+        "NotesTests6",
+        "NotesTests7",
+        "NotesTests8",
+        "NotesTests9"
+      ],
+      "target" : {
+        "containerPath" : "container:Notes.xcodeproj",
+        "identifier" : "0ECB5BBD2036EE9400655E0F",
+        "name" : "NotesTests"
+      }
+    },
+    {
+      "skippedTests" : [
+        "Notes10UITests",
+        "Notes1UITests",
+        "Notes2UITests",
+        "Notes3UITests",
+        "Notes4UITests",
+        "Notes5UITests",
+        "Notes6UITests",
+        "Notes7UITests",
+        "Notes8UITests",
+        "Notes9UITests"
+      ],
+      "target" : {
+        "containerPath" : "container:Notes.xcodeproj",
+        "identifier" : "0ECB5BC82036EE9400655E0F",
+        "name" : "NotesUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

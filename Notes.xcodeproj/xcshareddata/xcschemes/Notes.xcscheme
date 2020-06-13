@@ -38,7 +38,7 @@
       </MacroExpansion>
       <TestPlans>
          <TestPlanReference
-            reference = "container:NotesTests/Notes.xctestplan"
+            reference = "container:Notes.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>

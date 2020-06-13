@@ -509,6 +509,7 @@
 		0ECB5B9E2036EE9400655E0F = {
 			isa = PBXGroup;
 			children = (
+				A1BC3F5C24944A2800DC52C1 /* Notes.xctestplan */,
 				0ECB5BA92036EE9400655E0F /* Notes */,
 				0ECB5BC12036EE9400655E0F /* NotesTests */,
 				0ECB5BCC2036EE9400655E0F /* NotesUITests */,
@@ -643,7 +644,6 @@
 				A1BC3EE92494428F00DC52C1 /* NotesTests100.swift */,
 				0ECB5BC22036EE9400655E0F /* NotesTests.swift */,
 				0ECB5BC42036EE9400655E0F /* Info.plist */,
-				A1BC3F5C24944A2800DC52C1 /* Notes.xctestplan */,
 			);
 			path = NotesTests;
 			sourceTree = "<group>";

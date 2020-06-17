@@ -18,6 +18,7 @@
   },
   "testTargets" : [
     {
+      "parallelizable" : true,
       "skippedTests" : [
         "NotesTests1",
         "NotesTests10",
@@ -37,6 +38,7 @@
       }
     },
     {
+      "parallelizable" : true,
       "skippedTests" : [
         "Notes10UITests",
         "Notes1UITests",

@@ -846,8 +846,6 @@
 				0ECB5BA32036EE9400655E0F /* Sources */,
 				0ECB5BA42036EE9400655E0F /* Frameworks */,
 				0ECB5BA52036EE9400655E0F /* Resources */,
-				DD444A4F11DF4C80F7243973 /* [CP] Embed Pods Frameworks */,
-				BC84C17FD044303BAC0FA004 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -866,8 +864,6 @@
 				0ECB5BBA2036EE9400655E0F /* Sources */,
 				0ECB5BBB2036EE9400655E0F /* Frameworks */,
 				0ECB5BBC2036EE9400655E0F /* Resources */,
-				F3E415EA2A43BD8C6EC2AFFF /* [CP] Embed Pods Frameworks */,
-				EB4276023B1B6CA9AD9A0286 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -887,8 +883,6 @@
 				0ECB5BC52036EE9400655E0F /* Sources */,
 				0ECB5BC62036EE9400655E0F /* Frameworks */,
 				0ECB5BC72036EE9400655E0F /* Resources */,
-				EE62AC35C1DD2F6F4C0646A6 /* [CP] Embed Pods Frameworks */,
-				CE80DCDCBBA916070DF5A453 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -912,7 +906,7 @@
 				TargetAttributes = {
 					0ECB5BA62036EE9400655E0F = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					0ECB5BBD2036EE9400655E0F = {
 						CreatedOnToolsVersion = 9.2;
@@ -1026,101 +1020,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BC84C17FD044303BAC0FA004 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Notes/Pods-Notes-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CE80DCDCBBA916070DF5A453 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NotesUITests/Pods-NotesUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DD444A4F11DF4C80F7243973 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Notes/Pods-Notes-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Notes/Pods-Notes-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EB4276023B1B6CA9AD9A0286 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NotesTests/Pods-NotesTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EE62AC35C1DD2F6F4C0646A6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NotesUITests/Pods-NotesUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F3E415EA2A43BD8C6EC2AFFF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NotesTests/Pods-NotesTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1487,13 +1386,14 @@
 			baseConfigurationReference = 7D4B963E84BBD42F52005448 /* Pods-Notes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 72SA8V3WYL;
 				INFOPLIST_FILE = Notes/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.coletiv.medium-notes";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bitrise.coletiv.medium-notes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "io bitrise apm kickstarter profile";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1504,13 +1404,14 @@
 			baseConfigurationReference = FDBD52A1ABBF11742AE7CE22 /* Pods-Notes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 72SA8V3WYL;
 				INFOPLIST_FILE = Notes/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.coletiv.medium-notes";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bitrise.coletiv.medium-notes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "io bitrise apm kickstarter profile";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

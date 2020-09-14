@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: 50da9f70398b6e856ad4c009a58e084603e82860
+PODS:
+  - Glance_iOS (4.8.5.3)
 
-COCOAPODS: 1.4.0
+DEPENDENCIES:
+  - Glance_iOS (= 4.8.5.3)
+
+SPEC REPOS:
+  https://gitlab.com/glance-networks/CocoaPodsSpecs.git:
+    - Glance_iOS
+
+SPEC CHECKSUMS:
+  Glance_iOS: c82b63be4622d1c014df563e671d45a2b18b20df
+
+PODFILE CHECKSUM: c34c402d6949b7fed6458ca32776e90e65ed5282
+
+COCOAPODS: 1.8.4

@@ -219,6 +219,8 @@
 		A1BC4024249ABB1E00DC52C1 /* Notes24UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC3FC0249ABB1D00DC52C1 /* Notes24UITests.swift */; };
 		A1BC4025249ABB1E00DC52C1 /* Notes67UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC3FC1249ABB1D00DC52C1 /* Notes67UITests.swift */; };
 		AAC78FB424D5D240DAA9989F /* Pods_NotesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2ECDC78CF3DA6A7FD36A1E /* Pods_NotesUITests.framework */; };
+		C04FAF5A251026A60077B50D /* NetworkServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04FAF59251026A60077B50D /* NetworkServiceTest.swift */; };
+		C04FAF5C25102B510077B50D /* NetworkConnectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04FAF5B25102B510077B50D /* NetworkConnectionTests.swift */; };
 		DE97CABF541DD2472C691689 /* Pods_NotesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B7B63E4C86B866404ADEB3 /* Pods_NotesTests.framework */; };
 		F572A9E37121EA7142FF134E /* Pods_Notes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED5A775BE7D0646B876E2400 /* Pods_Notes.framework */; };
 /* End PBXBuildFile section */
@@ -466,6 +468,8 @@
 		A1BC3FC0249ABB1D00DC52C1 /* Notes24UITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notes24UITests.swift; sourceTree = "<group>"; };
 		A1BC3FC1249ABB1D00DC52C1 /* Notes67UITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notes67UITests.swift; sourceTree = "<group>"; };
 		BB4B81FE2BC5B7AF7DCCD961 /* Pods-NotesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NotesUITests/Pods-NotesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C04FAF59251026A60077B50D /* NetworkServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTest.swift; sourceTree = "<group>"; };
+		C04FAF5B25102B510077B50D /* NetworkConnectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnectionTests.swift; sourceTree = "<group>"; };
 		ED5A775BE7D0646B876E2400 /* Pods_Notes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDBD52A1ABBF11742AE7CE22 /* Pods-Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Notes/Pods-Notes.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -644,6 +648,7 @@
 				A1BC3EE92494428F00DC52C1 /* NotesTests100.swift */,
 				0ECB5BC22036EE9400655E0F /* NotesTests.swift */,
 				0ECB5BC42036EE9400655E0F /* Info.plist */,
+				C04FAF5B25102B510077B50D /* NetworkConnectionTests.swift */,
 			);
 			path = NotesTests;
 			sourceTree = "<group>";
@@ -799,6 +804,7 @@
 				0E698E492036FD8D00A802F7 /* Views */,
 				0ECB5BDE2036EF7200655E0F /* Main.storyboard */,
 				0ECB5BAC2036EE9400655E0F /* MainViewController.swift */,
+				C04FAF59251026A60077B50D /* NetworkServiceTest.swift */,
 			);
 			path = "Main Screen";
 			sourceTree = "<group>";
@@ -846,6 +852,7 @@
 				0ECB5BA32036EE9400655E0F /* Sources */,
 				0ECB5BA42036EE9400655E0F /* Frameworks */,
 				0ECB5BA52036EE9400655E0F /* Resources */,
+				F8F42AFD57D5008D610EA30B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -864,6 +871,7 @@
 				0ECB5BBA2036EE9400655E0F /* Sources */,
 				0ECB5BBB2036EE9400655E0F /* Frameworks */,
 				0ECB5BBC2036EE9400655E0F /* Resources */,
+				21891073C009E8CDECB36209 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -883,6 +891,7 @@
 				0ECB5BC52036EE9400655E0F /* Sources */,
 				0ECB5BC62036EE9400655E0F /* Frameworks */,
 				0ECB5BC72036EE9400655E0F /* Resources */,
+				C23867F5F073843D92AA34EB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -986,6 +995,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		21891073C009E8CDECB36209 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotesTests/Pods-NotesTests-frameworks.sh",
+				"${PODS_ROOT}/Glance_iOS/Glance_iOS.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Glance_iOS.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NotesTests/Pods-NotesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		981C0FD82103927AEA8D0E15 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1022,6 +1049,42 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C23867F5F073843D92AA34EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotesUITests/Pods-NotesUITests-frameworks.sh",
+				"${PODS_ROOT}/Glance_iOS/Glance_iOS.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Glance_iOS.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NotesUITests/Pods-NotesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8F42AFD57D5008D610EA30B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Notes/Pods-Notes-frameworks.sh",
+				"${PODS_ROOT}/Glance_iOS/Glance_iOS.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Glance_iOS.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Notes/Pods-Notes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1029,6 +1092,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C04FAF5A251026A60077B50D /* NetworkServiceTest.swift in Sources */,
 				0ECB5BAD2036EE9400655E0F /* MainViewController.swift in Sources */,
 				0ECB5BEC2036F0F600655E0F /* Note+CoreDataClass.swift in Sources */,
 				0ECB5BB32036EE9400655E0F /* Notes.xcdatamodeld in Sources */,
@@ -1074,6 +1138,7 @@
 				A1BC3F482494429000DC52C1 /* NotesTests92.swift in Sources */,
 				A1BC3F1B2494429000DC52C1 /* NotesTests62.swift in Sources */,
 				A1BC3F0A2494429000DC52C1 /* NotesTests53.swift in Sources */,
+				C04FAF5C25102B510077B50D /* NetworkConnectionTests.swift in Sources */,
 				A1BC3F082494429000DC52C1 /* NotesTests26.swift in Sources */,
 				A1BC3F552494429000DC52C1 /* NotesTests80.swift in Sources */,
 				A1BC3F0D2494429000DC52C1 /* NotesTests12.swift in Sources */,

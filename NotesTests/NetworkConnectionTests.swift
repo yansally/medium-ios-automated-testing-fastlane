@@ -44,7 +44,7 @@ class NetworkConnectionTests: XCTestCase {
                                 message: "testConnectedEnded",
                                 properties: ["key": "3355"])!
         coBrowse.glanceVisitorEvent(event)
-         XCTAssert(coBrowse.connectionState == "fail")
+         XCTAssert(coBrowse.connectionState == "failed")
     }
 
 }

@@ -26,7 +26,7 @@ class NetworkConnectionTests: XCTestCase {
                                 message: "testConnectedStarted",
                                 properties: ["key": "3355"])!
         coBrowse.glanceVisitorEvent(event)
-        XCTAssert(coBrowse.connectionState == "connected")
+        XCTAssert(coBrowse.connectionState == "connecte")
     }
     
     func testScreenSharingEnded() {

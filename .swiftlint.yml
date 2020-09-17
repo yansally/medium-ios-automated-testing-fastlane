@@ -1,0 +1,57 @@
+whitelist_rules:
+
+# Exclude Pods and tests from linting
+excluded:
+  - Pods
+  - GRDCTests
+  - Demo
+
+# Rules which will be excluded from running
+disabled_rules:
+  - trailing_closure
+  - identifier_name
+  - todo
+
+# Rules customizations
+line_length:
+  error: 270
+  warning: 250
+  ignores_comments: true
+
+force_cast: warning #implicitly
+force_try:
+  severity: warning 
+  
+empty_count: warning
+
+file_length:
+  warning: 4000
+  error: 9000
+
+opt_in_rules:
+  - array_init
+  - attributes
+  - closure_end_indentation
+  - closure_spacing
+  - contains_over_first_not_nil
+  - explicit_init
+  - fatal_error_message
+  - first_where
+  - implicit_return
+  - implicitly_unwrapped_optional
+  - joined_default_parameter
+  - let_var_whitespace
+  - literal_expression_end_indentation
+  - multiline_parameters
+  - nimble_operator
+  - operator_usage_whitespace
+  - overridden_super_call
+  - override_in_extension
+  - prohibited_super_call
+  - quick_discouraged_call
+  - redundant_nil_coalescing
+  - strict_fileprivate
+  - switch_case_on_newline
+  - unneeded_parentheses_in_closure_argument
+  - vertical_parameter_alignment_on_call
+  - yoda_condition

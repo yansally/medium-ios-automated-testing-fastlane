@@ -3,13 +3,10 @@ whitelist_rules:
 # Exclude Pods and tests from linting
 excluded:
   - Pods
-  - GRDCTests
-  - Demo
 
 # Rules which will be excluded from running
 disabled_rules:
   - trailing_closure
-  - identifier_name
   - todo
 
 # Rules customizations
@@ -21,12 +18,6 @@ line_length:
 force_cast: warning #implicitly
 force_try:
   severity: warning 
-  
-empty_count: warning
-
-file_length:
-  warning: 4000
-  error: 9000
 
 opt_in_rules:
   - array_init
@@ -34,6 +25,7 @@ opt_in_rules:
   - closure_end_indentation
   - closure_spacing
   - contains_over_first_not_nil
+  - empty_count
   - explicit_init
   - fatal_error_message
   - first_where

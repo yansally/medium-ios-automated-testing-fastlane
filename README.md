@@ -1,1 +1,1 @@
-Test Bitrise CI Danger
+Test Bitrise CI Danger integration

@@ -65,8 +65,8 @@ scheme = "Notes"
 #todoist.print_todos_table
 
 # Slather
-slather.configure("#{project}/#{project}.xcodeproj", "#{scheme}", options: {
-  workspace: "#{project}/Notes.xcworkspace",
+slather.configure("#{project}.xcodeproj", "#{scheme}", options: {
+  workspace: "Notes.xcworkspace",
   build_directory: "./derived_data",
   output_directory: "./test-reports",
   ci_service: :bitrise,

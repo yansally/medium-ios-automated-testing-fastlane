@@ -53,8 +53,8 @@ end
 #swiftlint.lint_files inline_mode: false, fail_on_error: true
 
 # Xcode summary (gets errors and warnings) - Obs.: links don't work.
-xcode_summary.inline_mode = true
-xcode_summary.report './build/reports/errors.json'
+#xcode_summary.inline_mode = true
+#xcode_summary.report './build/reports/errors.json'
 
 # Variables
 project = "Notes"

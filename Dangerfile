@@ -66,7 +66,7 @@ scheme = "Notes"
 
 # Slather
 slather.configure("#{project}/#{project}.xcodeproj", "#{scheme}", options: {
-  workspace: "#{project}/Demo.xcworkspace",
+  workspace: "#{project}/Notes.xcworkspace",
   build_directory: "./derived_data",
   output_directory: "./test-reports",
   ci_service: :bitrise,

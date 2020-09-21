@@ -16,7 +16,7 @@ fail("fcontext left in tests") if `grep -r --include \*.swift fcontext Notes/ `.
 # Check if tests were updated
 has_app_changes = !git.modified_files.grep(/Notes/).empty?
 #is_version_bump = git.modified_files.sort == ["CHANGELOG.md"].sort
-if has_app_changes && !is_version_bump
+if has_app_changes 
   warn("Remember to update tests", sticky: false)
 end
 

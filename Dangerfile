@@ -46,10 +46,10 @@ touched_paths.each do |p|
   end
 end
 
-# Swiftlint for Core
+# Swiftlint for Notes
 swiftlint.verbose = true
-#swiftlint.binary_path = "Demo/Pods/SwiftLint/swiftlint"
-#swiftlint.config_file = "Core/.swiftlint.yml"
+swiftlint.binary_path = "Pods/SwiftLint/swiftlint"
+swiftlint.config_file = "/.swiftlint.yml"
 swiftlint.lint_files inline_mode: false, fail_on_error: true
 
 # Xcode summary (gets errors and warnings) - Obs.: links don't work.

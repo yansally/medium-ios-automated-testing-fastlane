@@ -47,14 +47,14 @@ touched_paths.each do |p|
 end
 
 # Swiftlint for Notes
-#swiftlint.verbose = true
-#swiftlint.binary_path = "Pods/SwiftLint/swiftlint"
-#swiftlint.config_file = "/.swiftlint.yml"
-#swiftlint.lint_files inline_mode: false, fail_on_error: true
+swiftlint.verbose = true
+swiftlint.binary_path = "Pods/SwiftLint/swiftlint"
+swiftlint.config_file = "/.swiftlint.yml"
+swiftlint.lint_files inline_mode: false, fail_on_error: true
 
 # Xcode summary (gets errors and warnings) - Obs.: links don't work.
-xcode_summary.inline_mode = true
-xcode_summary.report './build/reports/errors.json'
+#xcode_summary.inline_mode = true
+#xcode_summary.report './build/reports/errors.json'
 
 # Variables
 project = "Notes"
@@ -65,8 +65,15 @@ scheme = "Notes"
 #todoist.print_todos_table
 
 # Slather
-
-#slather.show_coverage
+slather.configure("#{project}/#{project}.xcodeproj", "#{scheme}", options: {
+  workspace: "#{project}/Demo.xcworkspace",
+  build_directory: "./derived_data",
+  output_directory: "./test-reports",
+  ci_service: :bitrise,
+  decimals: 2,
+  post: true
+})
+slather.show_coverage
 
 # TODO: Check later - it stopped working
 # Prints markdown containing a random post from thecodinglove.com.

@@ -61,8 +61,8 @@ project = "Notes"
 scheme = "Notes"
 
 # Print TODOs
-todoist.warn_for_todos
-todoist.print_todos_table
+#todoist.warn_for_todos
+#todoist.print_todos_table
 
 # Slather
 

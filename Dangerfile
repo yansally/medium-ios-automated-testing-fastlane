@@ -65,14 +65,7 @@ scheme = "Notes"
 #todoist.print_todos_table
 
 # Slather
-slather.configure("#{project}.xcodeproj", "#{scheme}", options: {
-  workspace: "Notes.xcworkspace",
-  build_directory: "./derived_data",
-  output_directory: "./test-reports",
-  ci_service: :bitrise,
-  decimals: 2,
-  post: true
-})
+slather.configure("#{project}.xcodeproj", "#{scheme}")
 slather.show_coverage
 
 # TODO: Check later - it stopped working

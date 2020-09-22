@@ -1,4 +1,6 @@
 xcodeproj: Notes.xcodeproj
+scheme: Notes
+workspace: Notes.xcworkspace
 ignore:
   - Pods/*
   - NotesTests/*

@@ -65,8 +65,8 @@ scheme = "Notes"
 #todoist.print_todos_table
 
 # Slather
-slather.configure("#{project}.xcodeproj", "#{scheme}")
-slather.show_coverage
+#slather.configure("Path/to/Notes.xcodeproj", "Notes")
+#slather.show_coverage
 
 # TODO: Check later - it stopped working
 # Prints markdown containing a random post from thecodinglove.com.

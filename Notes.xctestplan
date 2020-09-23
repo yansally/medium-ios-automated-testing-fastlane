@@ -9,7 +9,6 @@
     }
   ],
   "defaultOptions" : {
-    "codeCoverage" : false,
     "targetForVariableExpansion" : {
       "containerPath" : "container:Notes.xcodeproj",
       "identifier" : "0ECB5BA62036EE9400655E0F",

@@ -57,8 +57,8 @@ end
 #xcode_summary.report './build/reports/errors.json'
 
 # Variables
-project = "Notes"
-scheme = "Notes"
+# project = "Notes"
+# scheme = "Notes"
 
 # Print TODOs
 #todoist.warn_for_todos

@@ -9,7 +9,7 @@ warn("PR is classed as Work in Progress") if github.pr_title.include? "[WIP]"
 warn("Big PR, consider splitting into smaller chunks.") if git.lines_of_code > 500
 
 # Don't let testing shortcuts get into master by accident
-fail("fdescribe left in tests") if `grep -r --include \*.swift fdescribe Core/ `.length > 1
+#fail("fdescribe left in tests") if `grep -r --include \*.swift fdescribe Core/ `.length > 1
 fail("fit left in tests") if `grep -r --include \*.swift fit Notes/`.length > 1
 fail("fcontext left in tests") if `grep -r --include \*.swift fcontext Notes/ `.length > 1
 

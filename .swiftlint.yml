@@ -7,6 +7,7 @@ excluded:
 # Rules which will be excluded from running
 disabled_rules:
   - trailing_closure
+  - identifier_name
   - todo
 
 # Rules customizations
